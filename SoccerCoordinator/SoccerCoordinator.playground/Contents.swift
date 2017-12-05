@@ -41,14 +41,39 @@ for var player in players {
         case 0:
             player["Team"] = "Sharks"
             teamSharks.append(player["Name"]!)
+        case 1:
+            player["Team"] = "Dragons"
+            teamDragons.append(player["Name"]!)
+        case 2:
+            player["Team"] = "Raptors"
+            teamRaptors.append(player["Name"]!)
         default:
             continue
         }
     }
-    
 }
 
-teamSharks
+// Letters
 
+for players in players {
+    let name = player["Name"]
+    let guardians = player["Guardians"]
+    let team = player["Team"]
+    var Scheduale = "March 17, 3pm"
+    if team == "Sharks" {
+        Scheduale = "March 17, 1pm"
+    } else if team == "Dragons"
+        Scheduale = "March 17, 1pm"
+    } else {
+        Scheduale = "March 18, 1pm"
+    }
+let letter = "Dear Mr./Mrs. \(Guardian) by this mean I want to tell you that your son \(player) was placed in the team \(Team) and you should attend to their first team team practice in \(Scheduale). Sincerelly, Soccer League Coordinator A. Fonseca"
+    letters.append(letter)
+}
 
+//print
 
+print (letters)
+for letter in letters {
+    print(letters)
+}
