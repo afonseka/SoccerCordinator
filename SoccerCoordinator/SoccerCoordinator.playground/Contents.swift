@@ -29,16 +29,16 @@ var teamRaptors: [[String: String]] = []
 
 // Distribute evenly players in the teams based on the experience and height
 
-var teamSharksHeightTotal: Int = 0
-var teamDragonsHeightTotal: Int = 0
-var teamRaptorsHeightTotal: Int = 0
+var teamSharksHeightTotal: Double = 0
+var teamDragonsHeightTotal: Double = 0
+var teamRaptorsHeightTotal: Double = 0
 
 // Players with experience, with height between 36 and 39
 
 var count = 0
 
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "Yes" && height >= 36 && height <= 39 {
         count += 1
@@ -68,7 +68,7 @@ for var player in players {
 
 count = 0
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "Yes" && height >= 40 && height <= 43 {
         count += 1
@@ -98,7 +98,7 @@ for var player in players {
 
 count = 0
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "Yes" && height >= 44 && height <= 47 {
         count += 1
@@ -128,7 +128,7 @@ for var player in players {
 
 count = 0
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "No" && height >= 36 && height <= 39 {
         count += 1
@@ -158,7 +158,7 @@ for var player in players {
 
 count = 0
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "No" && height >= 40 && height <= 43 {
         count += 1
@@ -188,7 +188,7 @@ for var player in players {
 
 count = 0
 for var player in players {
-    let height = Int(player["height"]!)!
+    let height = Double(player["height"]!)!
     
     if player["experience"] == "No" && height >= 44 && height <= 47 {
         count += 1
@@ -253,8 +253,8 @@ for letter in letters {
 
 // Print team's average height
 
-print("Sharks team average height: \(Float(teamSharksHeightTotal) / Float(teamSharks.count))")
-print("Dragons team average height: \(Float(teamDragonsHeightTotal) / Float(teamDragons.count))")
-print("Raptors team average height: \(Float(teamRaptorsHeightTotal) / Float(teamRaptors.count))")
+print("Sharks team average height: \(teamSharksHeightTotal / Double(teamSharks.count))")
+print("Dragons team average height: \(teamDragonsHeightTotal / Double(teamDragons.count))")
+print("Raptors team average height: \(teamRaptorsHeightTotal / Double   (teamRaptors.count))")
 
 
