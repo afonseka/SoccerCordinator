@@ -66,7 +66,6 @@ for var player in players {
 
 // Players with experience, with height between 40 and 43
 
-count = 0
 for var player in players {
     let height = Double(player["height"]!)!
     
@@ -96,7 +95,6 @@ for var player in players {
 
 // Players with experience, with height between 44 and 47
 
-count = 0
 for var player in players {
     let height = Double(player["height"]!)!
     
@@ -126,7 +124,6 @@ for var player in players {
 
 // Players without experience, with height between 36 and 39
 
-count = 0
 for var player in players {
     let height = Double(player["height"]!)!
     
@@ -156,7 +153,6 @@ for var player in players {
 
 // Players without experience, with height between 40 and 43
 
-count = 0
 for var player in players {
     let height = Double(player["height"]!)!
     
@@ -186,7 +182,6 @@ for var player in players {
 
 // Players without experience, with height between 44 and 47
 
-count = 0
 for var player in players {
     let height = Double(player["height"]!)!
     
@@ -256,5 +251,3 @@ for letter in letters {
 print("Sharks team average height: \(teamSharksHeightTotal / Double(teamSharks.count))")
 print("Dragons team average height: \(teamDragonsHeightTotal / Double(teamDragons.count))")
 print("Raptors team average height: \(teamRaptorsHeightTotal / Double   (teamRaptors.count))")
-
-
