@@ -33,14 +33,14 @@ var teamSharksHeightTotal: Double = 0
 var teamDragonsHeightTotal: Double = 0
 var teamRaptorsHeightTotal: Double = 0
 
-// Players with experience, with height between 36 and 39
+// Players with experience, with height between 44 and 47
 
 var count = 0
 
 for var player in players {
     let height = Double(player["height"]!)!
     
-    if player["experience"] == "Yes" && height >= 36 && height <= 39 {
+    if player["experience"] == "Yes" && height >= 44 && height <= 47 {
         count += 1
         switch count % 3 {
         case 0:
@@ -93,12 +93,12 @@ for var player in players {
     }
 }
 
-// Players with experience, with height between 44 and 47
+// Players with experience, with height between 36 and 39
 
 for var player in players {
     let height = Double(player["height"]!)!
     
-    if player["experience"] == "Yes" && height >= 44 && height <= 47 {
+    if player["experience"] == "Yes" && height >= 36 && height <= 39 {
         count += 1
         switch count % 3 {
         case 0:
